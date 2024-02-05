@@ -12,7 +12,7 @@
 
 #Custom binds for application launching
 
-bindsym $mod+b workspace 9; exec /home/psychhim/Downloads/mullvad-browser/start-mullvad-browser.sh
+bindsym $mod+b; exec /home/psychhim/Downloads/mullvad-browser/start-mullvad-browser.sh
 
 set $mod Mod4
 
