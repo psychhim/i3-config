@@ -210,7 +210,4 @@ bar {
   }
   status_command i3status
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 7e3950b (added thunar shortcut mod+t)
