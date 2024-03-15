@@ -18,6 +18,8 @@ exec_always feh --randomize --bg-fill ~/Pictures/Wallpapers/*
 
 #Autostart
 exec_always --no-startup-id compton -b --config $HOME/.config/picom/picom.conf
+exec_always --no-startup-id weechat
+exec_always --no-startup-id gajim
 #Polybar
 #exec_always --no-startup-id $HOME/scripts/polybarstart.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh --hack
@@ -25,6 +27,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh --hack
 #Custom binds for application launching
 bindsym $mod+b; exec /home/psychhim/Downloads/mullvad-browser/start-mullvad-browser.sh
 bindsym $mod+t; exec thunar
+bindsym $mod+x; exec gajim --show
+bindsym $mod+i; exec xfce4-terminal --execute weechat --dir .local/share/weechat/
 
 set $mod Mod4
 
@@ -71,9 +75,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10'"
 
 # A more modern dmenu replacement is rofi:
+#bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
-#bindsym $mod+40 exec --no-startup-id i3-dmenu-desktop
+# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
