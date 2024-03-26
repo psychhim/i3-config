@@ -29,6 +29,7 @@ bindsym $mod+b; exec /home/psychhim/Downloads/mullvad-browser/start-mullvad-brow
 bindsym $mod+t; exec thunar
 bindsym $mod+x; exec gajim --show
 bindsym $mod+i; exec xfce4-terminal --execute weechat --dir .local/share/weechat/
+bindsym $mod+m; exec thunderbird
 
 set $mod Mod4
 
